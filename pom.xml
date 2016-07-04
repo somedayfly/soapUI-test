@@ -26,7 +26,11 @@
         <artifactId>soapui-maven-plugin</artifactId>
         <version>4.6.1</version>
         <configuration>
-          <projectFile>REST-Project-soapui-project.xml</projectFile>
+            <projectFile>REST-Project-soapui-project.xml</projectFile>
+			<outputFolder>${basedir}/target/soapui</outputFolder>
+			<junitReport>true</junitReport>
+			<exportwAll>false</exportwAll>
+			<printReport>true</printReport>
         </configuration>
         <executions>
           <execution>
